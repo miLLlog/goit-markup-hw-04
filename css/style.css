@@ -103,10 +103,36 @@ body {
 
 .contacts {
   margin-left: auto;
+  display: flex;
 }
 
-.contacts .tel {
+.contacts .icon-tel {
   margin-left: 50px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-tel::before {
+  content: '';
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../img/smartphone.svg);
+  background-repeat: no-repeat;
+}
+
+.icon-mail {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-mail::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../img/envelope.svg);
+  background-repeat: no-repeat;
 }
 
 /* hero */
@@ -151,6 +177,38 @@ body {
 .feature-title {
   font-size: 14px;
   line-height: 1.14;
+}
+
+.feature-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bg-color);
+}
+
+.icon-envelope::before {
+  background-image: url(../img/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-clock::before {
+  background-image: url(../img/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-diagram::before {
+  background-image: url(../img/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-astronaut::before {
+  background-image: url(../img/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .feature-list {
@@ -212,14 +270,23 @@ body {
   min-height: 250px;
   padding-top: 60px;
 }
-.footer .contacts {
+
+.address {
+  font-style: normal;
+}
+
+.footer .address {
   margin-top: 20px;
 }
-.contacts .city {
+.address .city {
   color: #ffffff;
 }
-.contacts .item {
+.address .link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.address .mail {
+  margin: 9px 0px;
 }
 
 /* ==========portpholio===========*/

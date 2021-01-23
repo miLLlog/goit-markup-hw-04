@@ -95,45 +95,34 @@ body {
 
 .contacts .link {
   color: var(--text-color);
+  fill: var(--text-color);
+  display: inline-flex;
+  align-items: center;
 }
 
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--blue-color);
+  fill: var(--blue-color);
 }
 
 .contacts {
   margin-left: auto;
   display: flex;
-}
-
-.contacts .icon-tel {
-  margin-left: 50px;
-  display: inline-flex;
   align-items: center;
 }
 
-.icon-tel::before {
-  content: '';
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../img/smartphone.svg);
-  background-repeat: no-repeat;
-}
-
-.icon-mail {
-  display: inline-flex;
-  align-items: center;
-}
-
-.icon-mail::before {
-  content: '';
+.icon-envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-image: url(../img/envelope.svg);
-  background-repeat: no-repeat;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  margin-left: 50px;
 }
 
 /* hero */
@@ -187,7 +176,7 @@ body {
   background-color: var(--bg-color);
 }
 
-.icon-envelope::before {
+.icon-antenna::before {
   background-image: url(../img/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;

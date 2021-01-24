@@ -11,6 +11,7 @@
   --black-color: #000000;
   --bg-color: #f5f4fa;
   --bg-color-black: #2f303a;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -267,50 +268,33 @@ body {
 }
 
 .social-network .item {
-  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-network .item + .item {
   margin-left: 10px;
 }
 
-.crew .insta {
-  display: inline-block;
+.social-network .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-color);
   width: 44px;
   height: 44px;
-  background-image: url(../img/instagram.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  border-radius: 50%;
 }
 
-.crew .twitter {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  background-image: url(../img/twiter.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.crew .facebook {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  background-image: url(../img/facebook.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.crew .in {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  background-image: url(../img/in.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+.social-network .link:hover,
+.social-network .link:focus {
+  background-color: var(--blue-color);
+  fill: var(--white-color);
 }
 
 /* clients */
+
 .clients .container {
   text-align: center;
 }
@@ -327,65 +311,30 @@ body {
 }
 
 .regular-clients .item {
-  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .regular-clients .item + .item {
   margin-left: 30px;
 }
 
-.clients .company1 {
-  display: inline-block;
+.regular-clients .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-color);
   width: 170px;
   height: 90px;
-  background-image: url(../img/Client1.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
-.clients .company2 {
-  display: inline-block;
-  width: 170px;
-  height: 90px;
-  background-image: url(../img/Client2.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.clients .company3 {
-  display: inline-block;
-  width: 170px;
-  height: 90px;
-  background-image: url(../img/Client3.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.clients .company4 {
-  display: inline-block;
-  width: 170px;
-  height: 90px;
-  background-image: url(../img/Client4.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.clients .company5 {
-  display: inline-block;
-  width: 170px;
-  height: 90px;
-  background-image: url(../img/Client5.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.clients .company6 {
-  display: inline-block;
-  width: 170px;
-  height: 90px;
-  background-image: url(../img/Client6.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+.clients .link:hover,
+.clients .link:focus {
+  fill: var(--blue-color);
 }
 
 /* footer */

@@ -132,7 +132,9 @@ body {
   text-align: center;
 
   min-height: 600px;
+  width: 1600px;
   padding-top: 200px;
+  margin: 0 auto;
 
   background-image: linear-gradient(
       to right,
@@ -237,6 +239,8 @@ body {
 
 .crew {
   background-color: var(--bg-color);
+  width: 1600px;
+  margin: 0 auto;
   margin-top: 94px;
   padding-top: 94px;
   min-height: 710px;
@@ -343,6 +347,8 @@ body {
 
 .footer {
   background-color: var(--bg-color-black);
+  width: 1600px;
+  margin: 0 auto;
   min-height: 250px;
   padding-top: 60px;
 }

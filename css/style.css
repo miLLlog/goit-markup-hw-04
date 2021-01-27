@@ -46,6 +46,12 @@ body {
 
 /* header */
 
+.header {
+  max-width: 1600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ececec;
+}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -313,7 +319,7 @@ body {
 .regular-clients {
   display: flex;
   justify-content: center;
-  margin-bottom: 95px;
+  margin-bottom: 94px;
 }
 
 .regular-clients .item {
@@ -441,12 +447,20 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 94px;
 }
 
 .cards .items {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+}
+
+.cards .items:hover,
+.cards .items:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .cards .items:nth-child(3n) {
@@ -456,14 +470,14 @@ body {
   margin-bottom: 0;
 }
 .cards .par {
+  margin: 0 24px 20px 24px;
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color);
 }
 
 .cards .card-title {
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin: 20px 24px 4px 24px;
 
   font-size: 18px;
   line-height: 2;
